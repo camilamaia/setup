@@ -6,7 +6,7 @@
 * [ohmyz](https://ohmyz.sh/)
 * [fzf](https://github.com/junegunn/fzf)
 
-## IDE
+## IDEs
 
 * [VS Code](https://code.visualstudio.com/)
   * [Command Line Interface (CLI)](https://code.visualstudio.com/docs/editor/command-line)
