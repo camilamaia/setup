@@ -9,11 +9,7 @@ DISABLE_AUTO_TITLE="true"
 
 ## Plugins ###
 
-plugins=(
-  git,
-  python,
-  zsh_reload
-)
+plugins=(git python zsh_reload)
 
 source $ZSH/oh-my-zsh.sh
 
