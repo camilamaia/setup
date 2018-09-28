@@ -13,3 +13,8 @@
   * [VS Code Extensions](https://github.com/camilamaia/my-setup/blob/master/vs-code-extensions.sh)
 
 * [Xcode](https://developer.apple.com/xcode/)
+
+## Team Tools 
+
+* [Slack](https://slack.com/)
+  * Custom theme: `#282f37,#2A2A2A,#454647,#FFFFFF,#3d3d3d,#FFFFFF,#14d64d,#f35769`
