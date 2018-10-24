@@ -1,8 +1,13 @@
 code --install-extension bibhasdn.django-html
 code --install-extension bibhasdn.django-snippets
+code --install-extension brainfit.vscode-importmagic
+code --install-extension GitHub.vscode-pull-request-github
+code --install-extension mauve.terraform
 code --install-extension mikestead.dotenv
 code --install-extension ms-mssql.mssql
 code --install-extension ms-python.python
 code --install-extension PeterJausovec.vscode-docker
 code --install-extension uloco.theme-bluloco-light
 code --install-extension WakaTime.vscode-wakatime
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension ziyasal.vscode-open-in-github
