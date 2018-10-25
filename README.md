@@ -5,6 +5,7 @@
 * [zsh](http://www.zsh.org/): [Config File](https://github.com/camilamaia/my-setup/blob/master/zshrc)
 * [ohmyz](https://ohmyz.sh/)
 * [fzf](https://github.com/junegunn/fzf)
+* [hub](https://github.com/github/hub)
 
 ## IDEs
 
