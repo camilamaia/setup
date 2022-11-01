@@ -8,6 +8,7 @@
 * [atuin](https://github.com/ellie/atuin)
 * [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
 * [hub](https://github.com/github/hub)
+* [kubectl-zsh-auto-completion](https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh/)
 
 ## IDEs
 
