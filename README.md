@@ -3,12 +3,15 @@
 ## Terminal
 * [iTerm2](https://www.iterm2.com/): [Config File](https://github.com/camilamaia/my-setup/blob/master/com.googlecode.iterm2.plist)
 * [zsh](http://www.zsh.org/): [Config File](https://github.com/camilamaia/my-setup/blob/master/zshrc)
-* [ohmyz](https://ohmyz.sh/)
-* [fzf](https://github.com/junegunn/fzf)
+  * [ohmyz](https://ohmyz.sh/)
+  * [zsh-z](https://github.com/agkozak/zsh-z)
+  * [fzf](https://github.com/junegunn/fzf)
+  * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+  * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+  * [kubectl-zsh-auto-completion](https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh/)
+  * [iterm-tab-color-oh-my-zsh](https://github.com/bernardop/iterm-tab-color-oh-my-zsh)
 * [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
 * [hub](https://github.com/github/hub)
-* [kubectl-zsh-auto-completion](https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh/)
-* [iterm-tab-color-oh-my-zsh](https://github.com/bernardop/iterm-tab-color-oh-my-zsh)
 * [tldr pages](https://tldr.sh/)
 
 ## IDEs
