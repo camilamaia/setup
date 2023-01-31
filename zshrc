@@ -1,36 +1,78 @@
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+### ZSH ###
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/camilamaia/.oh-my-zsh
-
-ZSH_THEME="avit"
-DISABLE_AUTO_TITLE="true"
-
-## Plugins ###
-
-plugins=(git git-flow brew history node npm kubectl iterm-tab-color)
-
-source $ZSH/oh-my-zsh.sh
-. /Users/camilamaia/.oh-my-zsh/plugins/z/z.sh
-
-### User configuration ###
-
-export LC_ALL=en_US.UTF-8
+export ZSH="$HOME/.oh-my-zsh"
 export LANG=en_US.UTF-8
 
-export WORKON_HOME=/Users/camilamaia/envs/
-source /usr/local/bin/virtualenvwrapper.sh
+ZSH_THEME="avit"
 
-export NPM_TOKEN=""
-export PIP_EXTRA_INDEX_URL=""
+# Plugins
+plugins=(
+  git
+  z
+  git-flow
+  brew
+  history
+  zsh-autosuggestions
+  kubectl
+  iterm-tab-color
+)
 
-export NVM_DIR="/Users/camilamaia/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
-# cat ~/.aws/credentials
-export AWS_ACCESS_KEY_ID=""
-export AWS_SECRET_ACCESS_KEY=""
+### END ZSH ###
+
+### ALIAS ###
+
+ZSHRC_PATH="~/.zshrc"
+
+alias edit-zsh="code $ZSHRC_PATH"
+alias show-zsh="cat $ZSHRC_PATH"
+
+WORKSPACE_DIR="~/workspace"
+
+alias work="cd $WORKSPACE_DIR"
+
+# Python
+
+alias py-clean-cache="find . -name '*.pyc' -exec rm -f {} \;"
+alias py-cache="find . -name '*.pyc';"
+
+### END ALIAS ###
+
+### ITERM TAB TITLE ###
+
+# Alias for colours
+
+alias tc-black="tc 0 0 0"
+alias tc-white="tc 255 255 255"
+alias tc-red="tc 255 0 0"
+alias tc-lime="tc 0 255 0"
+alias tc-blue="tc 0 0 255"
+alias tc-yellow="tc 255 255 0"
+alias tc-cyan="tc 0 255 255"
+alias tc-magenta="tc 255 0 255"
+alias tc-silver="tc 192 192 192"
+alias tc-gray="tc 128 128 128"
+alias tc-maroon="tc 128 0 0"
+alias tc-olive="tc 128 128 0"
+alias tc-green="tc 0 128 0"
+alias tc-purple="tc 128 0 128"
+alias tc-teal="tc 0 128 128"
+alias tc-navy="tc 0 0 128"
+alias tc-orange="tc 255 165 0"
+
+# Set iterm tab title to current working directory
+iterm_tab_title() {
+  title="\e]0;${PWD##*/}\a"
+  title_upper=$(echo $title | tr '[:lower:]' '[:upper:]')
+  echo -ne $title_upper
+}
+
+add-zsh-hook precmd iterm_tab_title
+
+### END ITERM TAB TITLE ###
 
 ### FZF ###
 
@@ -48,76 +90,38 @@ setopt HIST_VERIFY               # Do not execute immediately upon history expan
 setopt APPEND_HISTORY            # append to history file
 setopt HIST_NO_STORE             # Don't store history commands
 
+# To install useful key bindings and fuzzy completion:
+export FZF_DEFAULT_OPTS='--height 40% --border --color'
+
 bindkey "${terminfo[kcuu1]}" fzf-history-widget # Bind "up arrow" key to fzf command
 
-# To install useful key bindings and fuzzy completion:
-export FZF_DEFAULT_OPTS='--height 40% --reverse --border --color'
+# ch - browse chrome history
+ch() {
+  local cols sep
+  cols=$(( COLUMNS / 3 ))
+  sep='{::}'
 
-### Alias ###
+  cp -f ~/Library/Application\ Support/Google/Chrome/Profile\ 3/History /tmp/h
 
-WORKSPACE_DIR="~/workspace"
-
-# ScanAPI
-
-alias scanner="cd $WORKSPACE_DIR/scanapi && workon scanner && code ."
-
-# Python
-
-alias py-clean-cache="find . -name '*.pyc' -exec rm -f {} \;"
-alias py-cache="find . -name '*.pyc';"
-
-# Notes
-
-alias notes="cd ~/notes && code ."
-
-# iTerm tab color
-
-alias tc-black="tc 0 0 0"
-alias tc-white="tc	255 255 255"
-alias tc-red="tc 255 0 0"
-alias tc-lime="tc 0 255 0"
-alias tc-blue="tc 0 0 255"
-alias tc-yellow="tc 255 255 0"
-alias tc-cyan="tc 0 255 255"
-alias tc-magenta="tc 255 0 255"
-alias tc-silver="tc 192 192 192"
-alias tc-gray="tc 128 128 128"
-alias tc-maroon="tc 128 0 0"
-alias tc-olive="tc 128 128 0"
-alias tc-green="tc 0 128 0"
-alias tc-purple="tc 128 0 128"
-alias tc-teal="tc 0 128 128"
-alias tc-navy="tc 0 0 128"
-alias tc-orange="tc 255 165 0"
-
-# Golang
-
-export GOPATH=$HOME/go
-
-# ZSH
-
-ZSHRC_PATH="~/.zshrc"
-
-alias edit-zsh="code $ZSHRC_PATH"
-alias view-zsh="cat $ZSHRC_PATH"
-
-
-# SET ITERM TAB TITLE TO CURRENT WORKING DIRECTORY
-
-DISABLE_AUTO_TITLE="true"
-
-iterm_tab_title() {
-  title="\e]0;${PWD##*/}\a"
-  title_upper=$(echo $title | tr '[:lower:]' '[:upper:]')
-  echo -ne $title_upper
+  sqlite3 -separator $sep /tmp/h \
+    "select substr(title, 1, $cols), url
+     from urls order by last_visit_time desc" |
+  awk -F $sep '{printf "%-'$cols's  \x1b[36m%s\x1b[m\n", $1, $2}' |
+  fzf --ansi --multi | sed 's#.*\(https*://\)#\1#' | xargs open
 }
 
-add-zsh-hook precmd iterm_tab_title
+### END FZF ###
 
-# END
+### OTHERS ###
 
-export PATH="$HOME/.fastlane/bin:$PATH"
-export PATH="/usr/local/opt/python/libexec/bin:/usr/local/sbin:$PATH"
-export PATH=${PATH}:/Users/camilamaia/go/bin
-export PATH=${PATH}:~/.local/bin
-source /Users/camilamaia/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+
+# kubectl autocomplete
+source <(kubectl completion zsh)
+
+# thefuck
+eval $(thefuck --alias oops)
+
+# zsh-syntax-highlighting
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
