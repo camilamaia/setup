@@ -21,3 +21,11 @@
   * [User Settings](vs-code-user-settings.json)
   * [Extensions](vs-code-extensions.sh)
   * Theme: [Bluloco Light](https://marketplace.visualstudio.com/items?itemName=uloco.theme-bluloco-light)
+
+## Automation
+
+### Apple Shortcuts
+
+- [Sync Data from Chrome to Safari](apple-shortcuts/sync-from-chrome-to-safari.scpt)
+
+### Alfred App
