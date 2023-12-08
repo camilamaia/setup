@@ -1,0 +1,52 @@
+{
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.codeActionsOnSave": {},
+    "editor.fontWeight": "bold",
+    "editor.formatOnSave": false,
+    "editor.rulers": [
+        80,
+        100
+    ],
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "files.autoSave": "onFocusChange",
+    "files.exclude": {
+        "**/.pytest_cache": true,
+        "**/*__pycache__": true,
+        "**/*.pyc": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
+    "redhat.telemetry.enabled": false,
+    "workbench.colorTheme": "Bluloco Light",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.sideBar.location": "left",
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[ruby]": {
+        "editor.defaultFormatter": "rebornix.ruby",
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.semanticHighlighting.enabled": true
+    },
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "githubPullRequests.pullBranch": "never",
+    "window.zoomLevel": 2,
+    "[html]": {
+        "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "editor.wordWrap": "on"
+}
