@@ -18,6 +18,9 @@ $ ./backup.sh
 
 ## Catalog
 
+### Operational System
+* MacOS
+
 ### Terminal
 * [iTerm2](https://www.iterm2.com/): [Config File](com.googlecode.iterm2.plist)
 * [zsh](http://www.zsh.org/): [Config File](zshrc)
