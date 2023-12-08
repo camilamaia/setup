@@ -38,3 +38,4 @@ echo "Installing VS Code plugins..."
 curl -o vs-code-extensions.sh https://raw.githubusercontent.com/camilamaia/setup/main/vs-code-extensions.sh
 chmod +x vs-code-extensions.sh
 ./vs-code-extensions.sh
+rm vs-code-extensions.sh
