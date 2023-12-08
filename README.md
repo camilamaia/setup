@@ -1,4 +1,4 @@
-# My Setup
+# Setup
 
 ## Install
 
