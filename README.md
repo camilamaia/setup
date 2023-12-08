@@ -16,7 +16,9 @@ To update the config files.
 $ ./backup.sh
 ```
 
-## Terminal
+## Catalog
+
+### Terminal
 * [iTerm2](https://www.iterm2.com/): [Config File](com.googlecode.iterm2.plist)
 * [zsh](http://www.zsh.org/): [Config File](zshrc)
   * [ohmyz](https://ohmyz.sh/)
@@ -30,7 +32,7 @@ $ ./backup.sh
 * [hub](https://github.com/github/hub)
 * [tldr pages](https://tldr.sh/)
 
-## IDEs
+### IDE
 
 * [VS Code](https://code.visualstudio.com/)
   * [Command Line Interface (CLI)](https://code.visualstudio.com/docs/editor/command-line)
@@ -38,12 +40,12 @@ $ ./backup.sh
   * [Extensions](vs-code-extensions.sh)
   * Theme: [Bluloco Light](https://marketplace.visualstudio.com/items?itemName=uloco.theme-bluloco-light)
 
-## Automation
+### Automations
 
-### AppleScripts
+#### AppleScripts
 
 I add the scripts to Apple Shortcuts.
 
 - [Import Data from Chrome to Safari](AppleScripts/import-from-chrome-to-safari.scpt): It imports bookmarks and history data from Chrome to Safari. It is useful to be able to use this data inside the Spotlight.
 
-### Alfred App
+#### Alfred App
