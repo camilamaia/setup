@@ -47,7 +47,7 @@ $ ./backup.sh
 
 #### AppleScripts
 
-I add the scripts to Apple Shortcuts.
+I manually add the scripts to [Apple Shortcuts](https://support.apple.com/en-au/guide/shortcuts-mac/welcome/mac).
 
 - [Import Data from Chrome to Safari](AppleScripts/import-from-chrome-to-safari.scpt): It imports bookmarks and history data from Chrome to Safari. It is useful to be able to use this data inside the Spotlight.
 
