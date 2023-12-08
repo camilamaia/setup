@@ -1,5 +1,21 @@
 # My Setup
 
+## Install
+
+```bash
+$ git clone git@github.com:camilamaia/setup.git
+$ cd setup
+$ ./install.sh
+```
+
+## Backup
+
+To update the config files.
+
+```bash
+$ ./backup.sh
+```
+
 ## Terminal
 * [iTerm2](https://www.iterm2.com/): [Config File](com.googlecode.iterm2.plist)
 * [zsh](http://www.zsh.org/): [Config File](zshrc)
@@ -8,7 +24,7 @@
   * [fzf](https://github.com/junegunn/fzf)
   * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
   * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
-  * [kubectl-zsh-auto-completion](https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh/)
+  * [kubectl](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/kubectl)
   * [iterm-tab-color-oh-my-zsh](https://github.com/bernardop/iterm-tab-color-oh-my-zsh)
 * [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
 * [hub](https://github.com/github/hub)
