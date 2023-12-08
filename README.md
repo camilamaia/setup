@@ -26,6 +26,6 @@
 
 ### Apple Shortcuts
 
-- [Sync Data from Chrome to Safari](apple-shortcuts/sync-from-chrome-to-safari.scpt)
+- [Import Data from Chrome to Safari](apple-shortcuts/import-from-chrome-to-safari.scpt): It import bookmarks and history from Chrome to Safari. It is useful to be able to use this data inside the Spotlight.
 
 ### Alfred App
