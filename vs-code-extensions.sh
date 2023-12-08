@@ -1,3 +1,5 @@
+# export extensions with: code --list-extensions | xargs -L 1 echo code --install-extension
+
 code --install-extension aeschli.vscode-css-formatter
 code --install-extension alexkrechik.cucumberautocomplete
 code --install-extension Arjun.swagger-viewer
