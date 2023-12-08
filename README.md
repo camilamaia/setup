@@ -18,13 +18,6 @@
 
 * [VS Code](https://code.visualstudio.com/)
   * [Command Line Interface (CLI)](https://code.visualstudio.com/docs/editor/command-line)
-  * [VS Code User Settings](vs-code-user-settings.json)
-  * [VS Code Extensions](vs-code-extensions.sh)
+  * [User Settings](vs-code-user-settings.json)
+  * [Extensions](vs-code-extensions.sh)
   * Theme: [Bluloco Light](https://marketplace.visualstudio.com/items?itemName=uloco.theme-bluloco-light)
-
-* [Xcode](https://developer.apple.com/xcode/)
-
-## Team Tools 
-
-* [Slack](https://slack.com/)
-  * Custom theme: `#282f37,#2A2A2A,#454647,#FFFFFF,#3d3d3d,#FFFFFF,#14d64d,#f35769`
