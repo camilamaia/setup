@@ -1,4 +1,4 @@
-## iTerm Configuration ##
+## iTerm2 Configuration ##
 curl -o ~/Library/Preferences/com.googlecode.iterm2.plist https://github.com/camilamaia/setup/blob/main/com.googlecode.iterm2.plist
 
 ## Base Tools ##
