@@ -10,7 +10,7 @@ $ ./install.sh
 
 ## Backup
 
-To update the config files.
+It copies the local config files so you can update them here in this repo:
 
 ```bash
 $ ./backup.sh
