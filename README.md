@@ -24,8 +24,10 @@
 
 ## Automation
 
-### Apple Shortcuts
+### AppleScripts
 
-- [Import Data from Chrome to Safari](apple-shortcuts/import-from-chrome-to-safari.scpt): It imports bookmarks and history data from Chrome to Safari. It is useful to be able to use this data inside the Spotlight.
+I add the scripts to Apple Shortcuts.
+
+- [Import Data from Chrome to Safari](AppleScripts/import-from-chrome-to-safari.scpt): It imports bookmarks and history data from Chrome to Safari. It is useful to be able to use this data inside the Spotlight.
 
 ### Alfred App
