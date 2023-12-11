@@ -20,6 +20,7 @@ $ ./backup.sh
 
 ### Operational System
 * MacOS
+* Window Manager: [Rectangle](https://rectangleapp.com/)
 
 ### Terminal
 * [iTerm2](https://www.iterm2.com/): [Config File](com.googlecode.iterm2.plist)
